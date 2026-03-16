@@ -1,4 +1,4 @@
-from logic_utils import check_guess, get_range_for_difficulty
+from logic_utils import check_guess, get_range_for_difficulty, parse_guess
 
 def test_winning_guess():
     # If the secret is 50 and guess is 50, it should be a win
@@ -20,5 +20,26 @@ def test_hard_mode_range():
     low, high = get_range_for_difficulty("Hard")
     assert low == 1
     assert high == 100
+
+def test_parse_guess_whitespace():
+    # Whitespace-only input should fail
+    ok, guess_int, err = parse_guess("   ")
+    assert ok == False
+    assert guess_int is None
+    assert err == "That is not a number."
+
+def test_parse_guess_infinity():
+    # Infinity input should fail
+    ok, guess_int, err = parse_guess("inf")
+    assert ok == False
+    assert guess_int is None
+    assert err == "That is not a number."
+
+def test_parse_guess_negative():
+    # Negative numbers should be parsed successfully
+    ok, guess_int, err = parse_guess("-5")
+    assert ok == True
+    assert guess_int == -5
+    assert err is None
 
 

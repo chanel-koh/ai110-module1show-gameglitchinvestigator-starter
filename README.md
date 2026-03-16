@@ -37,5 +37,5 @@ It wrote the code, ran away, and now the game is unplayable.
 - ![alt text](<Screenshot 2026-03-15 at 9.45.21 PM.png>)
 
 ## 🚀 Stretch Features
-
+- ![alt text](<Screenshot 2026-03-15 at 10.18.16 PM.png>)
 - [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
