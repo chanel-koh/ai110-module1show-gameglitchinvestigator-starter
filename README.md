@@ -25,13 +25,16 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The purpose of this game is to provide a simple guessing game with different difficulty modes and hints to point you to the secret number.
+- Bugs found in the original implementation include incorrect hints due to string-int comparison instead of int-int comparison and a swapped normal vs. hard mode range.
+- Fixes include enforcing an int-int comparison for correct go higher/go lower hints and a smaller range for normal compared to hard mode to match intuition of what makes the game harder. 
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- ![alt text](<Screenshot 2026-03-15 at 9.44.43 PM.png>)
+- ![alt text](<Screenshot 2026-03-15 at 9.44.58 PM.png>)
+- ![alt text](<Screenshot 2026-03-15 at 9.45.12 PM.png>)
+- ![alt text](<Screenshot 2026-03-15 at 9.45.21 PM.png>)
 
 ## 🚀 Stretch Features
 

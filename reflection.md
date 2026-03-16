@@ -47,12 +47,18 @@ I tested whether a bug was really fiixed through a pytest case and by running th
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  I would explain Streamlit reruns as a refreshed state of the app - whatever changes were made in the source code are reflected in the rerun. Therefore, whenever you make changes to a Streamlit application's source code, you should rerun it to test the changes. Otherwise, you will still see the old version of the app.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+  - One prompting strategy that I want to reuse in the future is to give multistep instructions with a format like we practiced in this project, such as "Move this function to this file, update the logic to accomplish this goal, and update its import in this other file."
+  -I would also like to reuse the testing habits practiced in this project, such as using pytest to test simple, smaller pieces of a functionality to ensure it works.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+  -One thing I would do differently is to break down the assistance into multiple phases, such as first identifying the bug, then asking for refactoring suggestions, then writing tests to verify changes. This keeps the prompts much more specific and easily verifyable, as opposed to making a lot of changes at once and just going along with what the AI is doing.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  -This project helped me realize how to use AI as a coding partner rather than the sole driver of the coding process by checking its output and giving human input along the way.
